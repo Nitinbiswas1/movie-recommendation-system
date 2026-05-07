@@ -220,7 +220,7 @@ REST_FRAMEWORK = {
 }
 
 # Movie Recommendation Model Configuration
-MODEL_DIR = os.environ.get('MODEL_DIR', os.path.join(BASE_DIR, 'training/models'))
+MODEL_DIR = os.environ.get('MODEL_DIR', os.path.join(BASE_DIR, 'models'))
 
 # Create models directory if it doesn't exist
 Path(MODEL_DIR).mkdir(parents=True, exist_ok=True)
